@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap/js/jquery.min.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/esm/popper.js">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 offset-3">
+                    <div class=" text-secondary">
+                        <h2 id="regy" class="text-center">Register here</h2>
+                        <br>
+                        <p class="lead" id="p">
+                            You must enter your details to register. 
+                        </p>
+                    </div>
+                    <form action="register.php" method="POST" class="text-secondary" >
+                        <div class="form-group">
+                            <label for="fname">First Name:
+                                <span class="err text-warning"></span>
+                            </label>
+                            <input type="text" name="f=name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="fname">Last Name:
+                                <span class="err text-warning"></span>
+                            </label>
+                            <input type="text" name="l-name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="fname">Phone:
+                                <span class="err text-warning"></span>
+                            </label>
+                            <input type="mobile" name="mobile" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="fname">Age:
+                                <span class="err text-warning"></span>
+                            </label>
+                            <input type="age" name="age" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="fname">Email:
+                                <span class="err text-warning"></span>
+                            </label>
+                            <input type="email" name="mail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="fname">Password:
+                                <span class="err text-warning"></span>
+                            </label>
+                            <input type="password" name="pass" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="fname">Confirm Password:
+                                <span class="err text-warning"></span>
+                            </label>
+                            <input type="password" name="pass1" class="form-control">
+                        </div>
+                        <input type="button" name="submit" value="Register" onclick="register.php">
+                        <br>
+                        <p><b>Already registered!</b><a href="Login.html">Click to log in</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <style>
+        #regy{
+            margin-top:4em;        
+            padding: 0px;
+            
+        }
+        #p{
+            font-family: 
+        }
+
+            </style>
+    </body>
+    <footer>
+
+    </footer>
+</html>

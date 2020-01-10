@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+    </head>
+    <body>
+        <nav class="container navbar">
+            
+        </nav>
+      <div class="container">
+          <div class="row padding">
+            <div class="col-6 offset-3 col-md-6 col-sm-6"> 
+                <div id="log"class="text-center " >
+                    <h2><b>Log In</b></h2>
+                </div>
+                 <form action="login.php" method="POST" >
+                     <div class="form-group">
+                         <label for="email">Email
+                             <span id="err"> </span><?echo 'email is incorrect' ?>
+                         </label><br>
+                         <i class="fas fa-user"></i>
+                         <input type="email" name="mail" class="form-control">
+                     </div>
+                     <div class="form-group">
+                         <label for="password" >Password</label><br>
+                         <i class="fas fa-lock">
+                             <input type="passowrd" name="pass" class="form-control"></i>
+                     </div>
+                     <button class="btn form-control btn-primary">Log In</button>
+                     
+                     <p class="text-dark"><a href="resetPass.html">Forgot Password</a></p>
+                     <br>
+                     <p class="bg-secondary">Copywrite&copy2020 baseline technologies., ltd. All rights reserved.</p>
+
+                 </form>
+                 <style>
+                 #log{
+                     margin-top: 7.6em;
+
+                 }
+                 form{
+                     margin-top: 4em;
+                 }
+                 </style>
+
+            </div>
+          </div>
+      </div>
+        
+    </body>
+    <footer>
+
+    </footer>
+</html>h
