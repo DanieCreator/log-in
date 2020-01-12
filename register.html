@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="../bootstrap/js/jquery.min.js">
+        <link rel="stylesheet" href="register.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/esm/popper.js">
     </head>
     <body>
@@ -16,50 +17,50 @@
                             You must enter your details to register. 
                         </p>
                     </div>
-                    <form action="register.php" method="POST" class="text-secondary" >
+                    <form action="" method="POST" class="text-secondary" id="register">
                         <div class="form-group">
-                            <label for="fname">First Name:
+                            <label for="fname">First Name
                                 <span class="err text-warning"></span>
                             </label>
-                            <input type="text" name="f=name" class="form-control">
+                            <input type="text" name="f-name" id="f-name" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="fname">Last Name:
+                            <label for="lname">Last Name
                                 <span class="err text-warning"></span>
                             </label>
-                            <input type="text" name="l-name" class="form-control">
+                            <input type="text" name="l-name" id="l-name" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="fname">Phone:
+                            <label for="phone">Phone
                                 <span class="err text-warning"></span>
                             </label>
-                            <input type="mobile" name="mobile" class="form-control">
+                            <input type="mobile" name="mobile" id="phone" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="fname">Age:
+                            <label for="age">Age
                                 <span class="err text-warning"></span>
                             </label>
-                            <input type="age" name="age" class="form-control">
+                            <input type="age" name="age" id="age" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="fname">Email:
+                            <label for="email">Email
                                 <span class="err text-warning"></span>
                             </label>
-                            <input type="email" name="mail" class="form-control">
+                            <input type="email" name="mail" id="mail" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="fname">Password:
+                            <label for="password">Password
                                 <span class="err text-warning"></span>
                             </label>
-                            <input type="password" name="pass" class="form-control">
+                            <input type="password" name="pass" id="pass" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="fname">Confirm Password:
+                            <label for="password">Confirm Password
                                 <span class="err text-warning"></span>
                             </label>
-                            <input type="password" name="pass1" class="form-control">
+                            <input type="password" name="pass1" id="pass1" class="form-control">
                         </div>
-                        <input type="button" name="submit" value="Register" onclick="register.php">
+                          <button class="form-control text-light btn-secondary" name="register" type="submit" onclick="validate()" >Register</button>
                         <br>
                         <p><b>Already registered!</b><a href="Login.html">Click to log in</a></p>
                     </form>
@@ -72,11 +73,10 @@
             padding: 0px;
             
         }
-        #p{
-            font-family: 
-        }
+      
 
             </style>
+            <script src="validate.js"></script>
     </body>
     <footer>
 
